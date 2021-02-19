@@ -1,7 +1,6 @@
 
 +++
-title = "Code Page"
+title = "Code"
 template = "code.html"
 +++
 
-Code will go here.
