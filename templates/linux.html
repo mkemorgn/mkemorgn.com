@@ -4,26 +4,5 @@
 <h1 class="title">
   {{ page.title }}
 </h1>
-
-<div class="content">
-  <p>
-    These are config files for various linux software that I use.
-  </p>
-  <ul>
-    <li>qtile: My favorite window manager.  This is home for me currently.</li>
-    <li>vim: My favorite text editor, I do 99% of my editing here.</li>
-    <li>doom emacs: My second favorite text editor.</li>
-    <li>alacritty: My favorite terminal emulator.  Heard it was the fastest I took their word for it.</li>
-    <li>fish shell: Bash is still my default shell system wide but I use the fish shell the most.
-    <li>rofi: My favorite launcher. I keep mine simple.</li>
-  </ul>
-  <p>
-    Currently, I'm trying to learn rust so I have started on the penrose window manager, but 
-    I haven't made it very far yet.  Any rust advice/ code reviews would be great.
-  </p>
-  <p><a href="https://github.com/mkemorgn">Source Code</a></p>
-
-  <p>My current setup in qtile</p>
-  <img src="/images/web1.jpg"/>
-
+{{ page.content | safe }}
 {% endblock content %}
