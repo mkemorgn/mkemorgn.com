@@ -1,40 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>mkemorgn</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-</head>
-
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<html>
+  <head>
+    <title>mkemorgn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+<nav class="navbar is-custom">
   <div class="navbar-brand">
-    
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-
-  <div id="navbar" class="navbar-menu">
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="/" class="navbar-item">
-        Home
+      <a class="navbar-item" href="/">
+      Home
       </a>
-
-      <a href="/photography/" class="navbar-item">
-        Photos
+      <a class="navbar-item" href="/photography/">
+      Photos
       </a>
-
-      <a href="/programming/" class="navbar-item">
-        Code
+      <a class="navbar-item" href="/programming/">
+      Code
       </a>
     </div>
   </div>
 </nav>
-
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+  
+  let navbarBurger = document.querySelector('.navbar-burger');
+  let navbarMenu = document.querySelector('.navbar-menu');
+  if (navbarBurger && navbarMenu) {
+    navbarBurger.addEventListener('click', function() {
+      navbarBurger.classList.toggle('is-active');
+      if (navbarBurger.classList.contains('is-active')) {
+        navbarMenu.style.display = 'block';
+        if (navbarMenu.querySelectorAll('a[href]')) {
+          [].forEach.call(navbarMenu.querySelectorAll('a[href]'), function(navURL) {
+            navURL.addEventListener('click', function() {
+              navbarMenu.style.display = 'none';
+              navbarBurger.classList.remove('is-active');
+            });
+          });
+        }
+      }
+      else navbarMenu.style.display = 'none';
+    });
+  }
+  if (document.querySelectorAll('.navbar-dropdown')) {
+    [].forEach.call(document.querySelectorAll('.navbar-dropdown'), function(elDrop) {
+      elDrop.style.display = 'none';
+    });
+  }
+  if (document.querySelectorAll('.navbar-link')) {
+    [].forEach.call(document.querySelectorAll('.navbar-link'), function(elLink) {
+      if (elLink.classList.contains('is-active')) elLink.classList.toggle('is-active');
+      if (elLink.nextElementSibling.classList.contains('navbar-dropdown') && elLink.nextElementSibling.hasChildNodes()) {
+        elLink.addEventListener('click', function() {
+          elLink.classList.toggle('is-active');
+          if (elLink.classList.contains('is-active') && elLink.nextElementSibling.style.display === 'none') elLink.nextElementSibling.style.display = 'block';
+          else if (!elLink.classList.contains('is-active') && elLink.nextElementSibling.style.display === 'block') elLink.nextElementSibling.style.display = 'none';
+          [].forEach.call(elLink.nextElementSibling.childNodes, function(siblingChild) {
+            siblingChild.addEventListener('click', function() {
+              siblingChild.parentNode.style.display = 'none';
+              if (elLink.classList.contains('is-active')) elLink.classList.toggle('is-active');
+            });
+          });
+        });
+        elLink.nextElementSibling.addEventListener('mouseleave', function() {
+          elLink.nextElementSibling.style.display = 'none';
+          if (elLink.classList.contains('is-active')) elLink.classList.toggle('is-active');
+        });
+      }
+    });
+  }
+  
+  });
+</script>
 <body>
   <section class="section">
     <div class="container">
@@ -42,5 +88,5 @@
     </div>
   </section>
 </body>
-
 </html>
+

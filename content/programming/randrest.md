@@ -22,4 +22,7 @@ at "random".  As a user, the only thing you'll get back is one restaurant.
 I'd like to build this out further just for fun.  I wrote it all with python so 
 it's super easy to understand what's going on and it's easy to tinker with.  
 <br>
-[randrest repo](https://github.com/mkemorgn/randrest)
+[randrest repo](https://github.com/mkemorgn/randrest)  
+<br>
+![randrest](/images/randrest.jpg)
+
