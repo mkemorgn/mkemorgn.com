@@ -1,14 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-  <section class="hero">
-    <div class="hero-body">
-      <p class="title">Mike Morgan</p>
-      <p class="subtitle">
-        The idea is to make everything as minimal as possible, but not stale.
-      </p>
+<div class="columns">
+  <div class="tile is-ancestor">
+    <div class ="tile">
+      <div class="column">
+        <div class="hero-body">
+          <p class="title">Mike Morgan</p>
+            <p class="subtitle">
+              The idea is to make everything as minimal as possible.
+          </p>
+        <div class="about">
+          <p>
+            I'm a photographer and software developer.  In both, simplicity is something
+            I value.  
+          </p>
+          <br>
+          <p>
+            I have photos here of some trips I took, and I also have the source code
+            from some projects I created or was a part of.
+            <br>
+          </p>  
+          <br>
+          <h1> Check out my Instagram <a href="https://www.instagram.com/mkemorgn/">here.</a></h1>
+            <br>
+            <h1> and my GitHub <a href="https://github.com/mkemorgn">here.</a></h1> 
+        </div>
+
+      </div>
     </div>
-  </section>
+    <div class="column">
+      <figure class="image">
+        <img src="/images/me1.jpg">
+      </figure>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock content %}
