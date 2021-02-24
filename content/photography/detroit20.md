@@ -14,7 +14,7 @@ Some of my favorites from a trip to Detroit with the homie Cam.
 <br>
 ![more light inside rest stop](/images/photography/detroit/detroit4.jpg)  
 <br>
-![cam paying a toll](/images/photography/detroit/detroit5.jpg)  
+![paying a toll](/images/photography/detroit/detroit5.jpg)  
 <br>
 ![flat road in Ohio](/images/photography/detroit/detroit6.jpg)  
 <br>
@@ -24,13 +24,13 @@ Some of my favorites from a trip to Detroit with the homie Cam.
 <br>
 ![lady reading in a coffee shop](/images/photography/detroit/detroit9.jpg)  
 <br>
-![me in a wine bar in Detroit](/images/photography/detroit/detroit10.jpg)  
+![in a wine bar in Detroit](/images/photography/detroit/detroit10.jpg)  
 <br>
 ![wines in the bar](/images/photography/detroit/detroit11.jpg)  
 <br>
 ![people in the bar](/images/photography/detroit/detroit12.jpg)  
 <br>
-![cam digging through records](/images/photography/detroit/detroit13.jpg)  
+![digging through records](/images/photography/detroit/detroit13.jpg)  
 <br>
 ![interesting light downtown detroit](/images/photography/detroit/detroit14.jpg)  
 <br>
