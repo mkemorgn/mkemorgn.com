@@ -6,22 +6,22 @@ template = "detroit20.html"
 
 Some of my favorites from a trip to Detroit with the homie Cam.  
 <br>
-![d1](/images/photography/detroit/detroit1.jpg)
-![d1](/images/photography/detroit/detroit2.jpg)
-![d1](/images/photography/detroit/detroit3.jpg)
-![d1](/images/photography/detroit/detroit4.jpg)
-![d1](/images/photography/detroit/detroit5.jpg)
-![d1](/images/photography/detroit/detroit6.jpg)
-![d1](/images/photography/detroit/detroit7.jpg)
-![d1](/images/photography/detroit/detroit8.jpg)
-![d1](/images/photography/detroit/detroit9.jpg)
-![d1](/images/photography/detroit/detroit10.jpg)
-![d1](/images/photography/detroit/detroit11.jpg)
-![d1](/images/photography/detroit/detroit12.jpg)
-![d1](/images/photography/detroit/detroit13.jpg)
-![d1](/images/photography/detroit/detroit14.jpg)
-![d1](/images/photography/detroit/detroit15.jpg)
-![d1](/images/photography/detroit/detroit16.jpg)  
+![semi with a hole in the trailer](/images/photography/detroit/detroit1.jpg)
+![ohio turnpike sign](/images/photography/detroit/detroit2.jpg)
+![light inside of rest stop](/images/photography/detroit/detroit3.jpg)
+![more light inside rest stop](/images/photography/detroit/detroit4.jpg)
+![cam paying a toll](/images/photography/detroit/detroit5.jpg)
+![flat road in Ohio](/images/photography/detroit/detroit6.jpg)
+![old hotel front](/images/photography/detroit/detroit7.jpg)
+![old hotel side](/images/photography/detroit/detroit8.jpg)
+![lady reading in a coffee shop](/images/photography/detroit/detroit9.jpg)
+![me in a wine bar in Detroit](/images/photography/detroit/detroit10.jpg)
+![wines in the bar](/images/photography/detroit/detroit11.jpg)
+![people in the bar](/images/photography/detroit/detroit12.jpg)
+![cam digging through records](/images/photography/detroit/detroit13.jpg)
+![interesting light downtown detroit](/images/photography/detroit/detroit14.jpg)
+![interesting parking booth](/images/photography/detroit/detroit15.jpg)
+![detroit opera house](/images/photography/detroit/detroit16.jpg)  
 <br>
 Looks super random, but actually we planned this trip to see a Larry June concert
 and shoot in the city.  Little did we know this would be our last trip under "normal"
