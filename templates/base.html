@@ -8,11 +8,6 @@
   <meta content="#ffffff" name="theme-color" />
   <meta content="#da532c" name="msapplication-TileColor" />
 
-  <!-- Snipcart -->
-  <link rel="preconnect" href="https://app.snipcart.com">
-  <link rel="preconnect" href="https://cdn.snipcart.com">
-  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-
   {% if config.extra.favicon.webmanifest %}
   <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
   {% endif %}
@@ -97,15 +92,6 @@
             <span class="icon">
               <i class="fas fa-search"></i>
             </span>
-          </a>
-          <a class="navbar-item" id="shopping-cart">
-            <button class="snipcart-checkout" style="background:none;border:none;padding:0;outline:none;">
-              <span class="icon">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-                <div id="snipcart" data-config-modal-style="side" data-api-key="YTA4YjA5N2UtYzAwNi00ZDkwLTgxM2QtMjMzNWY2OTE1ZGQ5NjM3NTA0Njk0MDUzMTcxMjQ3" hidden></div>
-              </span>
-            </button>
           </a>
           <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
             <span class="icon">
@@ -194,9 +180,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
   <script src='{{ get_url(path='search_index.en.js') }}'></script>
-  <script src='{{ get_url(path='js/site.js') }}'></script>
-  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-
+ 
   {% block custom_js %}
   {% endblock %}
 </body>

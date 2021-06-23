@@ -31,7 +31,6 @@ navbar_items = [
   { url = "$BASE_URL/", name = "Home" },
   { url = "$BASE_URL/photos", name = "Photos" },
   { url = "$BASE_URL/code", name = "Code" },
-  { url = "$BASE_URL/store", name = "Store"},
  ]}
 ]
 
