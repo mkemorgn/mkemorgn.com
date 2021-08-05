@@ -1,0 +1,54 @@
+$primary-color: #FF5733;
+$nav-text-color: #000000;
+$nav-text-hover-color: #616161;
+
+
+#nav {
+    padding-left: 20px;
+    padding-top: 20px;
+    grid-column-start: 1;
+    a {
+        text-decoration: none;
+        color: $nav-text-color;
+        font-size: 25px;
+        padding: 10px;
+    }
+}
+
+nav {
+    overflow: hidden;
+    padding-right: 20px;
+    ul {
+        color: $nav-text-color;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: $nav-text-color;
+            font-size: 25px;
+            padding: 10px;
+            float: right;
+            &:hover {
+                color: $nav-text-hover-color;
+            }
+        }
+    }
+}
+
+.images {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        li {
+            height: 40vh;
+            flex-grow: 1;
+            padding: 10px;
+            img {
+                max-height: 100%;
+                min-width: 70%;
+                object-fit: cover;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
