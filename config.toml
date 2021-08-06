@@ -13,10 +13,3 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-navbar_items = [
- { code = "en", nav_items = [
-  { url = "$BASE_URL/", name = "Home" },
-  { url = "$BASE_URL/photos", name = "Photos" },
-  { url = "$BASE_URL/code", name = "Code" },
- ]}
-]
