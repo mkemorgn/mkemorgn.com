@@ -1,6 +1,7 @@
 
 +++
 title = "Detroit 2020"
+description = "Detroit2020"
 +++
 
 Some of my favorites from a trip to Detroit with the homie Cam.  

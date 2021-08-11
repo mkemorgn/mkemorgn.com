@@ -1,6 +1,7 @@
 
 +++
 title = "Denver 2020"
+description = "Denver2020"
 +++
 
 ![in front of crema coffee](/images/photography/denver/denver2.jpg)  
