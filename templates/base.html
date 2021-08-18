@@ -7,6 +7,8 @@
   <link href='{{ get_url(path='style.css') }}' rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <script src="https://kit.fontawesome.com/e1a96fa28a.js" crossorigin="anonymous"></script>
+  <link href="/lightbox/dist/css/lightbox.css" rel="stylesheet" />
+  <script src="/lightbox/dist/js/lightbox-plus-jquery.js"></script>
 
 </head>
 
@@ -22,23 +24,24 @@
     </ul>
   </nav>
 
-<body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
+  <body class="main">
+    <div class="section">
+      <div class="container">
+        {% block content %} {% endblock %}
+      </div>
     </div>
-  </section>
-</body>
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      Website built with love, by me.
-    </p>
-    <span>
-      <a href="https://github.com/mkemorgn"><i class="fab fa-github"></i></a>
-      <a href="https://instagram.com/mkemorgn"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/mkemorgn"><i class="fab fa-twitter"></i></a>
-    </span>
-  </div>
-</footer>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Website built with love, by me.
+        </p>
+        <span>
+          <a href="https://github.com/mkemorgn"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/mkemorgn"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/mkemorgn"><i class="fab fa-twitter"></i></a>
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
