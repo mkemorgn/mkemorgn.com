@@ -157,4 +157,10 @@ footer {
         }
     }
 }
+#submit-button {
+    background-color: black;
 
+    &:hover {
+        background-color: $nav-text-hover-color;
+    }
+}
