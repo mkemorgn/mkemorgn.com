@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+<div class="columns">
+
+  {% for page in section.pages %}
+  <div class="column">
+    <div class="card">
+      <div class="card-image">
+        <p class="title is-4"> {{ page.title }}
+    </p>
+          <figure class="image is-4by3">
+            <li>
+              <a
+                href="{{ page.permalink | safe }}">
+                <img src="/images/{{ page.description }}.jpg" alt="Placeholder image">
+              </a>
+            </li>
+          </figure>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}
