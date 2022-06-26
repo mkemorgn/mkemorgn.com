@@ -1,7 +1,7 @@
 +++
 title = "Houston 2021"
 description = "Houston2021"
-page_template = "trips.html"
+template = "trips.html"
 +++
 
 ![kitchen table in hotel](https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/01.jpg)
