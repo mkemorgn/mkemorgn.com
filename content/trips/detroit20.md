@@ -2,6 +2,7 @@
 +++
 title = "Detroit 2020"
 description = "Detroit2020"
+date = "2020-03-15"
 +++
 
 Some of my favorites from a trip to Detroit with the homie Cam.  

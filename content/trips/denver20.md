@@ -2,6 +2,7 @@
 +++
 title = "Denver 2020"
 description = "Denver2020"
+date = "2020-09-04"
 +++
 
 ![in front of crema coffee](https://mikemorganphotos.s3.us-east-2.amazonaws.com/Denver+2020/denver1.jpg)  

@@ -1,6 +1,7 @@
 +++
 title = "Houston 2021"
 description = "Houston2021"
+date = "2021-08-23"
 +++
 
 ![kitchen table in hotel](https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston1.jpg)
