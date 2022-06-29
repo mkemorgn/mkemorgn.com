@@ -1,7 +1,7 @@
 
 +++
 title = "Trips"
-template = "photos.html"
-page_template = "photo-page.html"
+template = "trips.html"
+page_template = "trips-page.html"
 +++
 

@@ -1,35 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-  <ul>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/02.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/03.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/04.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/05.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/06.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/07.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/08.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/09.webp" alt="Placeholder image">
-    </li>
-    <li>
-        <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/houston2021/10.webp" alt="Placeholder image">
-    </li>
-  </ul>
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+<div class="columns">
+  {% for page in section.pages %}
+  <div class="column">
+    <div class="box">
+        <h1 id="trip-name">
+          {{ page.title }}
+        </h1>
+
+        <figure class="image is-4by3">
+          <li>
+            <a
+              href="{{ page.permalink | safe }}">
+              <img src="/images/{{ page.description }}.jpg" alt="Placeholder image">
+            </a>
+          </li>
+        </figure>
+    </div>
+  </div>
+  {% endfor %}
 </div>
 {% endblock content %}
