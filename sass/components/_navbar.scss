@@ -1,0 +1,27 @@
+nav {
+  overflow: hidden; // Clears the floated list items
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; // Horizontally align list items
+
+    li {
+      float: left; // For horizontal layout
+
+      a {
+        display: block; // Allows padding and width/height
+        color: black; // Text color
+        text-align: center; // Center text
+        padding: 14px 16px; // Spacing around text
+        text-decoration: none; // No underline
+
+        &:hover {
+          color: #5c6b28; // Hover effect
+        }
+      }
+    }
+  }
+}
+

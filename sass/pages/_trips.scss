@@ -1,0 +1,38 @@
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // This creates a responsive grid
+  grid-gap: 20px; // This is the gap between the boxes
+  padding: 20px; // Padding around the entire grid
+
+  .image-box {
+    position: relative;
+    background-color: #fff; // Default background color
+    background-size: cover; // Cover the entire area of the box
+    background-position: center; // Center the background image
+    border: 1px solid #eaeaea; // Border for the boxes
+    border-radius: 8px; // Rounded corners for the boxes
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Shadow for depth
+    overflow: hidden; // Ensures the content fits within the rounded corners
+    height: 300px; // Fixed height, or you can make it responsive
+
+    .image-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5); // Semi-transparent overlay
+      color: #fff; // White text color for the label
+      padding: 10px;
+      text-align: center; // Center the text
+      text-decoration: none; // Remove underline from the link
+      font-weight: bold; // Bold text for the label
+      transition: background-color 0.3s ease; // Transition for the hover effect
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.7); // Darken on hover
+      }
+    }
+  }
+}
+
