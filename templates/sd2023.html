@@ -1,89 +1,98 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% if page.extra.navbar%}
+  {% include "navbar.html" %}
+{% endif %}
+
+  <div class="trip">
+    <div class="title">
+      {{ page.title }}  
+    </div>
     <div class="content">
-        {{ page.content | safe }}
+      {{ page.content | safe }}
     </div>
 
-    <div class="container" id="gallery">
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd1.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd2.jpg">
-            </div>
+    <div class="trip-container" id="gallery">
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd1.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd2.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd3.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd4.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd3.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd4.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd5.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd6.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd5.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd6.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd7.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd8.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd7.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd8.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd9.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd10.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd9.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd10.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd11.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd12.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd11.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd12.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd13.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd14.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd13.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd14.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd15.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd16.jpg">
-            </div>
+      <div class="trip-columns">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd15.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd16.jpg">
+        </div>
+      </div>
 
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd17.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd18.jpg">
-            </div>
+      <div class="trip-column">
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd17.jpg">
         </div>
+        <div class="trip-column">
+            <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/sd2023/sd18.jpg">
+        </div>
+      </div>
+  </div>
 {% endblock %}
