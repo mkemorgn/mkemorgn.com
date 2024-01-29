@@ -8,8 +8,6 @@ nav {
     display: flex; // Horizontally align list items
 
     li {
-      float: left; // For horizontal layout
-
       a {
         display: block; // Allows padding and width/height
         color: black; // Text color
@@ -20,8 +18,23 @@ nav {
         &:hover {
           color: #5c6b28; // Hover effect
         }
+
+        &:visited {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+    
+    // Assuming .navbar-logo is a list item (li)
+    .navbar-logo {
+      text-decoration: none;
+      color: black;
+      margin-left: auto; // Pushes the logo to the right
+      a {
+        padding: 0; // Reset padding if you want the logo to align with the edges
+        }
       }
     }
   }
-}
 

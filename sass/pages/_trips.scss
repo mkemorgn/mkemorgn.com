@@ -10,6 +10,7 @@
   @extend %flex-center;
   flex-direction: column;
   width: 100%;
+  padding-top: 50px;
 }
 
 // Styling for the image boxes within the gallery
@@ -43,8 +44,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: rgba(92, 107, 40, 0.9); // Adjust hover color as needed
-    color: white;
+    color: rgba(92, 107, 40, 0.9); // Adjust hover color as needed
   }
 }
 
