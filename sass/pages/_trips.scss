@@ -1,11 +1,9 @@
-// Base content styling
 %flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Apply the flex-center to both image-gallery and pagination
 .image-gallery, .pagination {
   @extend %flex-center;
   flex-direction: column;
@@ -13,10 +11,9 @@
   padding-top: 50px;
 }
 
-// Styling for the image boxes within the gallery
 .image-box {
   background-color: #fff;
-  width: 35%; // Adjust based on your design requirements
+  width: 35%; 
   margin: 10px; // Provides space around each box
   border: 1px solid #eaeaea;
   border-radius: 8px;
@@ -26,7 +23,7 @@
 
   // Ensure that the image gallery doesn't stretch too wide on larger screens
   @media (max-width: 768px) {
-    width: 80%; // Adjust based on your design requirements for mobile
+    width: 80%; 
   }
 }
 
@@ -37,14 +34,14 @@
   right: 0;
   padding: 10px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.9); // Adjust for readability
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
 
   &:hover {
-    color: rgba(92, 107, 40, 0.9); // Adjust hover color as needed
+    color: rgba(92, 107, 40, 0.9);
   }
 }
 
@@ -65,12 +62,10 @@
     }
   }
 
-  // The previous link on the left
   .previous {
     float: left;
   }
 
-  // The next link on the right
   .next {
     float: right;
   }
