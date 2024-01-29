@@ -1,38 +1,78 @@
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // This creates a responsive grid
-  grid-gap: 20px; // This is the gap between the boxes
-  padding: 20px; // Padding around the entire grid
+// Base content styling
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .image-box {
-    position: relative;
-    background-color: #fff; // Default background color
-    background-size: cover; // Cover the entire area of the box
-    background-position: center; // Center the background image
-    border: 1px solid #eaeaea; // Border for the boxes
-    border-radius: 8px; // Rounded corners for the boxes
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Shadow for depth
-    overflow: hidden; // Ensures the content fits within the rounded corners
-    height: 300px; // Fixed height, or you can make it responsive
+// Apply the flex-center to both image-gallery and pagination
+.image-gallery, .pagination {
+  @extend %flex-center;
+  flex-direction: column;
+  width: 100%;
+}
 
-    .image-label {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.5); // Semi-transparent overlay
-      color: #fff; // White text color for the label
-      padding: 10px;
-      text-align: center; // Center the text
-      text-decoration: none; // Remove underline from the link
-      font-weight: bold; // Bold text for the label
-      transition: background-color 0.3s ease; // Transition for the hover effect
-      text-decoration: none;
+// Styling for the image boxes within the gallery
+.image-box {
+  background-color: #fff;
+  width: 35%; // Adjust based on your design requirements
+  margin: 10px; // Provides space around each box
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  position: relative;
 
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.7); // Darken on hover
-      }
+  // Ensure that the image gallery doesn't stretch too wide on larger screens
+  @media (max-width: 768px) {
+    width: 80%; // Adjust based on your design requirements for mobile
+  }
+}
+
+.image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); // Adjust for readability
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(92, 107, 40, 0.9); // Adjust hover color as needed
+    color: white;
+  }
+}
+
+// Styling for the pagination navigation
+.pagination {
+  margin-top: 20px; // Adds space between the gallery and the pagination links
+  width: 100%; // Ensure the pagination container takes up the full width
+
+  a {
+    margin: 0 15px; // Space out the previous and next links
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      color: #5c6b28;
     }
+  }
+
+  // The previous link on the left
+  .previous {
+    float: left;
+  }
+
+  // The next link on the right
+  .next {
+    float: right;
   }
 }
 
