@@ -1,9 +1,10 @@
-
 +++
 title = "New Orleans 2021"
 description = "NewOrleans2021"
 date = "2021-10-01"
 template = "new-orleans2021.html"
+[extra]
+navbar = true
 +++
 
 New Orleans was on my list of cities to visit for a while.  I've always felt like one of the only people in my circle of friends who hasn't been.  

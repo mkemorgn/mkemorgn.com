@@ -4,6 +4,8 @@ title = "Austin 2022"
 description = "Austin2022"
 date = "2022-11-13"
 template = "austin2022.html"
+[extra]
+navbar = true
 +++
 
 This was really Lombe's trip.  She was attending an event at the convention center, I just decided to tag along so I could explore while she was doing that.  

@@ -1,9 +1,10 @@
-
 +++
 title = "Detroit 2020"
 description = "Detroit2020"
 date = "2020-03-13"
 template = "detroit2020.html"
+[extra]
+navbar = true
 +++
 
 Some of my favorites from a trip to Detroit with the homie Cam.  
