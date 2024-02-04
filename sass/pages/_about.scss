@@ -1,0 +1,30 @@
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    .image-container, .text-container {
+      flex: 1;
+      padding: 50px;
+
+      &:first-child::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 75%;
+        width: 2px;
+        background: #ccc;
+      }
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+}
