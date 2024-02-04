@@ -21,6 +21,21 @@
   height: 300px;
   position: relative;
 
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+  }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
   // Ensure that the image gallery doesn't stretch too wide on larger screens
   @media (max-width: 768px) {
     width: 80%; 
@@ -32,7 +47,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   color: black;

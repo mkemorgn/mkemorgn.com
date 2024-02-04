@@ -4,6 +4,9 @@
   <div class="image-gallery">
     {% for page in paginator.pages %}
     <div class="image-box">
+      <div class="image-wrapper">
+        <img src="/images/{{ page.description }}.jpg" >
+      </div>
       <a class="image-label" href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </div>
     {% endfor %}
