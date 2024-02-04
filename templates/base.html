@@ -5,7 +5,6 @@
   <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
   <title>Mike Morgan</title>
   <link href='{{ get_url(path='style.css') }}' rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/e1a96fa28a.js" crossorigin="anonymous"></script>
   <lik rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href='{{ get_url(path='favicon-32x32.png') }}'>
   <link rel="icon" type="image/png" sizes="16x16" href='{{ get_url(path='favicon-16x16.png') }}'>
@@ -23,5 +22,8 @@
         {% block content %} {% endblock %}
       </div>
     </section>
+
+  <script src="https://kit.fontawesome.com/d41fc77e09.js" crossorigin="anonymous"></script>
+  <script src="{{ get_url(path='js/main.js', trailing_slash=false) }}" ></script>
 </body>
 </html>

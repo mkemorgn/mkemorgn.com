@@ -1,39 +1,61 @@
 nav {
-  overflow: hidden; // Clears the floated list items
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; // Horizontally align list items
+  .navbar-menu {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex; // Keep items in line
 
-    li {
-      a {
-        display: block; // Allows padding and width/height
-        color: black; // Text color
-        text-align: center; // Center text
-        padding: 14px 16px; // Spacing around text
-        text-decoration: none; // No underline
-
-        &:hover {
-          color: #5c6b28; // Hover effect
-        }
-
-        &:visited {
+      li {
+        a {
+          display: block;
           color: black;
+          text-align: center;
+          padding: 14px 16px;
           text-decoration: none;
+
+          &:hover {
+            color: #5c6b28;
+          }
+
+          &:visited {
+            color: black;
+            text-decoration: none;
+          }
         }
       }
     }
-    
-    .navbar-logo {
-      text-decoration: none;
-      color: black;
-      margin-left: auto; // Pushes the logo to the right
-      a {
-        padding: 0; // Reset padding if you want the logo to align with the edges
-        }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+      &.is-active {
+        display: block;
+      }
+      ul {
+        flex-direction: column;
       }
     }
   }
+
+  .navbar-logo {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}
 
