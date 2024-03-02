@@ -1,0 +1,31 @@
+// Base style for your blog pages
+.trip {
+  .trip-columns {
+    justify-content: center; // Centers the trip-columns in the flex container
+
+    .trip-column {
+      display: flex;
+      justify-content: center; // Centers content horizontally in the trip-column
+      align-items: center; // Centers content vertically in the trip-column
+
+      img {
+        max-width: 75%; // Ensures the image is responsive and fits its container
+        padding-bottom: 15px;
+        height: auto; // Maintains the aspect ratio of the image
+      }
+    }
+  }
+}
+
+// Style for the content above the images
+.title {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content {
+  margin: 50px;
+}
+

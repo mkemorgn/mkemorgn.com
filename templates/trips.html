@@ -1,26 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-  <div class="columns is-desktop is-centered is-multiline">
-    {% for page in section.pages %}
-    <div class="column is-half-desktop">
-      <div class="box" id="trip-boxes">
-          <h1 id="trip-name">
-            {{ page.title }}
-          </h1>
-
-          <figure class="image is-4by3">
-            <li>
-              <a
-                href="{{ page.permalink | safe }}">
-                <img src="/images/{{ page.description }}.jpg" alt="Placeholder image">
-              </a>
-            </li>
-          </figure>
+  <div class="image-gallery">
+    {% for page in paginator.pages %}
+    <div class="image-box">
+      <div class="image-wrapper">
+        <img src="/images/{{ page.description }}.jpg" >
       </div>
+      <a class="image-label" href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </div>
     {% endfor %}
   </div>
-</div>
+
+  <nav class="pagination">
+    {% if paginator.previous %}
+        <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+    {% endif %}
+    {% if paginator.next %}
+        <a class="next" href="{{ paginator.next }}">Next ›</a>
+    {% endif %}
+  </nav>
+
+
 {% endblock content %}

@@ -1,0 +1,51 @@
+.landing-page {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+
+  .landing-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column; // Default to vertical layout for mobile
+    text-align: center;
+
+    a {
+      display: block; // Make the link take the full width of its container
+      margin-bottom: 80px; // Space between items on mobile
+      font-size: 2.5em; // Font size for mobile
+      color: #000000; // Default text color
+      text-decoration: none; // Remove underline from links
+      transition: color 0.3s ease, text-decoration 0.5s ease; // Smooth transition for hover effects
+      opacity: 0;
+      animation: fadeIn 2s ease forwards; // Apply fade-in animation
+
+      &:visited {
+        color: #000000; // Color for visited links
+      }
+
+      &:hover {
+        color:  #5c6b28; // Change text color on hover
+      }
+    }
+  }
+
+  // Media query for desktop screens
+  @media screen and (min-width: 769px) {
+    .landing-items {
+      flex-direction: row; // Change to horizontal layout for desktop
+      justify-content: center;
+
+      a {
+        margin-right: 80px; // Space between items on desktop
+        font-size: 2.5em; // Increase font size for desktop
+      }
+    }
+  }
+}
+
+// Keyframes for fade-in animation
+@keyframes fadeIn {
+  to {
+    opacity: 1; // Fade to fully visible
+  }
+}

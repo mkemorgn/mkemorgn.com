@@ -1,70 +1,81 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="content">
-        {{ page.content | safe }}
+{% if page.extra.navbar%}
+  {% include "navbar.html" %}
+{% endif %}
+
+<div class="trip">
+  <div class="title">
+    {{ page.title }}  
+  </div>
+
+  <div class="content">
+      {{ page.content | safe }}
+  </div>
+
+  <div class="trip-container" id="gallery">
+    <div class=" trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston1.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston2.jpg">
+      </div>
     </div>
 
-    <div class="container" id="gallery">
-        <div class=" columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston1.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston2.jpg">
-            </div>
-        </div>
+    <div class="trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston3.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston4.jpg">
+      </div>
+    </div>
 
-        <div class="columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston3.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston4.jpg">
-            </div>
-        </div>
+    <div class="trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston5.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston6.jpg">
+      </div>
+    </div>
 
-        <div class="columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston5.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston6.jpg">
-            </div>
-        </div>
+    <div class="trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston7.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston8.jpg">
+      </div>
+    </div>
 
-        <div class="columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston7.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston8.jpg">
-            </div>
-        </div>
+    <div class="trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston9.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston10.jpg">
+      </div>
+    </div>
 
-        <div class="columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston9.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston10.jpg">
-            </div>
-        </div>
+    <div class="trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston11.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston12.jpg">
+      </div>
 
-        <div class="columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston11.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston12.jpg">
-            </div>
-
-        <div class="columns is-desktop is-vcentered">
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston13.jpg">
-            </div>
-            <div class="column">
-                <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston15.jpg">
-            </div>
-        </div>
+    <div class="trip-columns">
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston13.jpg">
+      </div>
+      <div class="trip-column">
+          <img src="https://mikemorganphotos.s3.us-east-2.amazonaws.com/Houston2021/houston15.jpg">
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

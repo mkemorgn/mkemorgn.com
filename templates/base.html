@@ -1,86 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<htmL lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
   <title>Mike Morgan</title>
   <link href='{{ get_url(path='style.css') }}' rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <script src="https://kit.fontawesome.com/e1a96fa28a.js" crossorigin="anonymous"></script>
-  <link href="/lightbox/dist/css/lightbox.css" rel="stylesheet" />
-  <script src="/lightbox/dist/js/lightbox-plus-jquery.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <lik rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href='{{ get_url(path='favicon-32x32.png') }}'>
   <link rel="icon" type="image/png" sizes="16x16" href='{{ get_url(path='favicon-16x16.png') }}'>
   <link rel="manifest" href='{{ get_url(path='site.webmanifest') }}'>
 </head>
 
-<nav class="navbar is-transparent is-fixed-top is-family-monospace" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" id="mkemorgn" href="/">mkemorgn</a>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+<body>
+    <section class="section">
+      <div class="container">
+        {% if section.extra.navbar %}
+          {% include "navbar.html" %}
+        {% endif %}
 
-  <div class="navbar-end">
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="nav-item" href="/trips">Trips</a>
-        <a class="nav-item" href="/contact">Contact</a>
-        <a class="nav-item" href="/about">About</a>
+        {% block content %} {% endblock %}
       </div>
-    </div>
-  </div>
-</nav>
+    </section>
 
-<body class="main">
-  <div class="container is-family-monospace">
-    {% block content %} {% endblock %}
-  </div>
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-      </p>
-      <span>
-        <a href="https://github.com/mkemorgn"><i class="fab fa-github"></i></a>
-        <a href="https://instagram.com/mkemorgn"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/mkemorgn"><i class="fab fa-twitter"></i></a>
-      </span>
-    </div>
-  </footer>
-<!--- Additional scripts -->
-{% block extrascripts %}
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
-
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-
-        });
-      });
-    }
-  });
-</script>
-{% endblock extrasripts %}
+  <script src="https://kit.fontawesome.com/d41fc77e09.js" crossorigin="anonymous"></script>
+  <script src="{{ get_url(path='js/main.js', trailing_slash=false) }}" ></script>
 </body>
 </html>

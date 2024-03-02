@@ -3,6 +3,8 @@ title = "Chicago 2022"
 description = "Chicago2022"
 date = "2022-03-18"
 template = "chicago2022.html"
+[extra]
+navbar = true
 +++
 
 I was initially not excited about going to Chicago, mostly because of the time of the year (March).  But It was for Lombe's birthday so I just went along with it.  

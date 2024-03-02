@@ -1,9 +1,10 @@
-
 +++
 title = "Denver 2020"
 description = "Denver2020"
 date = "2020-09-04"
 template = "denver2020.html"
+[extra]
+navbar = true
 +++
 
 This trip was kind of spur of the moment.  I think we were just tired of being in

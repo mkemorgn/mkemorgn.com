@@ -1,9 +1,10 @@
-
 +++
 title = "Boston 2022"
 description = "Boston2022"
 date = "2022-10-12"
 template = "boston2022.html"
+[extra]
+navbar = true
 +++
 
 Came to Boston for a work trip.  I stayed a little south of downtown, and these images are all from my 20 minute commute (walk) to work.  

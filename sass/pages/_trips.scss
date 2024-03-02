@@ -1,0 +1,88 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery, .pagination {
+  @extend %flex-center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.image-box {
+  background-color: #fff;
+  width: 35%; 
+  margin: 10px; // Provides space around each box
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  position: relative;
+
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+  }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  // Ensure that the image gallery doesn't stretch too wide on larger screens
+  @media (max-width: 768px) {
+    width: 80%; 
+  }
+}
+
+.image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    color: rgba(92, 107, 40, 0.9);
+  }
+}
+
+// Styling for the pagination navigation
+.pagination {
+  margin-top: 20px; // Adds space between the gallery and the pagination links
+  width: 100%; // Ensure the pagination container takes up the full width
+
+  a {
+    margin: 0 15px; // Space out the previous and next links
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      color: #5c6b28;
+    }
+  }
+
+  .previous {
+    float: left;
+  }
+
+  .next {
+    float: right;
+  }
+}
+
